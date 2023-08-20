@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block content %}
+ <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Travel Easy</div>
+              <div class="display-4">Travel Better</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Book Now</a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img class="img-fluid rounded-circle border-light"
+                 src="{{url_for('static', filename='images/travel2.jpg')}}"
+                 alt="travel better">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of the first page sight -->
+    <!-- pricing section -->
+    <section id="pricing" class="bg-light mt-3">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">
+            Chooses a good pricing plan for yourself
+          </p>
+        </div>
+        <!-- cards for e Book pricing -->
+        <div class="row m-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-4">
+            <div class="card border-primary border-1">
+              <div class="card-header text-center py-5">
+                <h4 class="card-title">Economy's class</h4>
+                <p
+                  class="display-6 m-4 fw-lighter d-inline text-decoration-line-through"
+                >
+                  $14.99
+                </p>
+                <p class="display-4 m-4 fw-light d-inline text-success">
+                  $9.99
+                </p>
+                <p class="card-text mx-5 text-muted">
+                  lorem ipsum dolor sit amet consectetur adipiscising elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary d-block btn-lg mt-3"
+                  >Book Now..</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-4">
+            <div class="card border-primary border-1">
+              <div class="card-header text-center py-5">
+                <h4 class="card-title">Business Class</h4>
+                <p
+                  class="display-6 m-4 fw-lighter d-inline text-decoration-line-through"
+                >
+                  $24.99
+                </p>
+                <p class="display-4 m-4 fw-light d-inline text-success">
+                  $19.99
+                </p>
+                <p class="card-text mx-5 text-muted">
+                  lorem ipsum dolor sit amet consectetur adipiscising elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary d-block btn-lg mt-3"
+                  >Book Now..</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-4">
+            <div class="card border-primary border-1">
+              <div class="card-header text-center py-5">
+                <h4 class="card-title">First class</h4>
+                <p
+                  class="display-6 m-4 fw-lighter d-inline text-decoration-line-through"
+                >
+                  $34.99
+                </p>
+                <p class="display-4 m-4 fw-light d-inline text-success">
+                  $9.99
+                </p>
+                <p class="card-text mx-5 text-muted">
+                  lorem ipsum dolor sit amet consectetur adipiscising elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary d-block btn-lg mt-3"
+                  >Book Now..</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
